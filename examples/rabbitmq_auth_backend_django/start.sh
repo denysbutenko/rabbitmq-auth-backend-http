@@ -1,3 +1,4 @@
 #!/bin/sh
-python manage.py syncdb
+python manage.py collectstatic
+python manage.py syncdb --noinput
 python manage.py runserver
